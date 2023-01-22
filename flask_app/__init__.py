@@ -4,5 +4,5 @@ from flask_bcrypt import Bcrypt
 
 app = Flask(__name__)
 # 2) create new app instance from flask object
-app.secret_key = "topsecret"
+app.secret_key = "its_a_secret"
 bcrypt = Bcrypt(app)
