@@ -14,8 +14,8 @@ class MySQLConnection:
                                     db = db,
                                     charset = 'utf8mb4',
                                     cursorclass = pymysql.cursors.DictCursor,
-                                    ssl_ca='/home/coder/template-app/ca-certificate.crt',
-                                    port='25060',
+                                    ssl_ca='https://raw.githubusercontent.com/Faezag/template-app/main/ca-certificate.crt',
+                                    port=25060,
                                     autocommit = True)
         self.connection = connection
 		# this connection = connection from constructor
