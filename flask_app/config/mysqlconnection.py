@@ -8,12 +8,14 @@ class MySQLConnection:
     def __init__(self, db):
     # constructor for class
     # change the user and password as needed
-        connection = pymysql.connect(host = 'localhost',
-                                    user = 'root', 
-                                    password = 'rootroot', 
+        connection = pymysql.connect(host = 'dbs-do-user-13382922-0.b.db.ondigitalocean.com',
+                                    user = 'rootroot', 
+                                    password = 'AVNS_GRC_TNpvv8fmBgYEiA0', 
                                     db = db,
                                     charset = 'utf8mb4',
                                     cursorclass = pymysql.cursors.DictCursor,
+                                    ssl_ca='/home/coder/template-app/ca-certificate.crt',
+                                    port='25060',
                                     autocommit = True)
         self.connection = connection
 		# this connection = connection from constructor
