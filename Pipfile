@@ -9,6 +9,7 @@ flask = "*"
 bcrypt = "*"
 flask-bcrypt = "*"
 flash = "*"
+gunicorn = "*"
 
 [dev-packages]
 
